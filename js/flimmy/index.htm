@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flimmy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="headbar">Flimmy</div>
+    <div class="container">
+        <div class="moviebox">
+            <h2>Vadachennai</h2>
+            <h3>Vetrimaran</h3>
+                <p>
+                    Vada Chennai is a 2018 Indian Tamil-language crime drama film written and directed by Vetrimaaran. 
+                    It is produced by Lyca Productions, Wunderbar Films and Grass Root Film Company. 
+                    The film stars Dhanush as Anbu, a skilled carrom player who becomes a reluctant participant in a gang war between two rival gangsters, alongside Kishore, Samuthirakani, Daniel Balaji, Pawan, Andrea Jeremiah, Aishwarya Rajesh and Ameer. It is the first instalment in a planned trilogy.
+                </p>
+            <button onclick="deletemovie(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-layer">
+      <h2>Add your movie</h2>
+      <form>
+        <input type="text" placeholder="Movie Name" id="Movie-name-box">
+        <input type="text" placeholder="Movie Director" id="Movie-director-name">
+        <textarea placeholder="Give your review" id="Review"></textarea>
+        <button id="addmovie">Submit</button>
+        <button id="cancelmovie">Cancel</button>
+      </form>  
+    </div>
+    <button class="plus-button" id="popup-plus-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html> 
